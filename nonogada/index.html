@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>No Nogada</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/style.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="app" class="app" v-cloak>
+        <div class="wrapper">
+            <div class="home page">
+                <h1>No Nogada</h1>
+                <h6>노가다하지 마세요 시키세요</h6>
+            </div>
+            <div class="list page" v-if="page === 'list'">
+                <a>필요한 프로그램이 있으면 신청하세요.</a>
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th class="d-none d-sm-table-cell">번호</th>
+                            <th class="text-left">프로그램</th>
+                            <th class="d-none d-sm-table-cell">상태</th>
+                            <th>사용 방법</th>
+                            <th class="d-none d-sm-table-cell">평가</th>
+                            <th>다운로드</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="d-none d-sm-table-cell">4</td>
+                        <td class="text-left">여러 명에게 이메일 보내기</td>
+                        <td class="d-none d-sm-table-cell">사용 가능</td>
+                        <td>
+                            <span>보기</span>
+                        </td>
+                        <td class="d-none d-sm-table-cell">
+                            <span>평가</span>
+                        </td>
+                        <td>
+                            <a href="./tools/multi-email-send.zip">multi-email-send.zip</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-none d-sm-table-cell">3</td>
+                        <td class="text-left">엑셀 반복 작업하기</td>
+                        <td class="d-none d-sm-table-cell">개발 중</td>
+                        <td>
+                            <span>보기</span>
+                        </td>
+                        <td class="d-none d-sm-table-cell">
+                            <span>평가</span>
+                        </td>
+                        <td>
+                            <a>multi-email-send.zip</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-none d-sm-table-cell">2</td>
+                        <td class="text-left">여러 명에게 이메일 보내기</td>
+                        <td class="d-none d-sm-table-cell">사용 가능</td>
+                        <td>
+                            <span>보기</span>
+                        </td>
+                        <td class="d-none d-sm-table-cell">
+                            <span>평가</span>
+                        </td>
+                        <td>
+                            <a href="./tools/multi-email-send.zip">multi-email-send.zip</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-none d-sm-table-cell">1</td>
+                        <td class="text-left">엑셀 반복 작업하기</td>
+                        <td class="d-none d-sm-table-cell">개발 중</td>
+                        <td>
+                            <span>보기</span>
+                        </td>
+                        <td class="d-none d-sm-table-cell">
+                            <span>평가</span>
+                        </td>
+                        <td>
+                            <a>multi-email-send.zip</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <a v-on:click="go('list')" v-else>무엇을 시킬까요?</a>
+        </div>
+        <div class="footer">
+            &copy; 2020 아프리카도서관. All rights reserved.
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>

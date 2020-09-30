@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            margin: 0;
+            overflow: hidden;
+            font-weight: 900;
+        }
+
+        body * {
+            font-family: '나눔바른고딕' !important;
+        }
+
+        .lyric {
+            position: absolute;
+            font-family: initial;
+            width: 100%;
+            text-align: center;
+            top: 50%;
+            left: 0;
+        }
+
+        .lyric .value {
+            margin: 0;
+        }
+
+        .lyric .count {
+            position: fixed;
+            left: 60px;
+            top: 30px;
+            font-size: 210px;
+            line-height: 1;
+        }
+
+        h5 {
+            font-size: 50px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-style: italic;
+            margin-top: 70px;
+        }
+
+        .time {
+            padding-right: 30px;
+            text-align: right;
+            position: fixed;
+            bottom: 0;
+            font-size: 100px;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <span id="lyric" class="lyric">
+        <pre class="value"></pre>
+        <span class="count"></span>
+    </span>
+    <div id="time" class="time"></div>
+    <audio id="mr"></audio>
+    <script src="http://code.jquery.com/jQuery-1.12.4.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
